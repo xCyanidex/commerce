@@ -308,7 +308,6 @@ export async function getCollectionProducts({
     console.log(`No collection found for \`${collection}\``);
     return [];
   }
-
   return reshapeProducts(removeEdgesAndNodes(res.body.data.collection.products));
 }
 
